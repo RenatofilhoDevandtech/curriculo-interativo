@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
     init: async () => {
       // IMPORTANTE: Cole aqui o objeto de configuração do seu projeto Firebase.
       const firebaseConfig = {
-       apiKey: "AIzaSyC8YO8tyvIBAtSoFN6kdS-mF6KGAR79wl0",
-       authDomain: "curriculo-interativo.firebaseapp.com",
-       projectId: "curriculo-interativo",
-       storageBucket: "curriculo-interativo.firebasestorage.app",
-       messagingSenderId: "333721113393",
-       appId: "1:333721113393:web:bc7a7eb64ea5728fa25610",
+        apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+        authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+        projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+        storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+        appId: import.meta.env.VITE_FIREBASE_APP_ID
       };
       try {
         const app = initializeApp(firebaseConfig);
