@@ -1,0 +1,12 @@
+{
+  "name": "curriculo-interativo-vercel",
+  "version": "1.0.0",
+  "description": "Backend proxy para o currículo interativo com IA na Vercel.",
+  "main": "api/server.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "firebase": "^12.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
