@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renato Filho | Desenvolvedor Fullstack</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link para seu arquivo de CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/icon-logo1.png" type="image/png" />
+  </head>
+  <body class="text-stone-300">
+    <!-- Fundo animado -->
+    <div class="gradient-bg">
+      <div class="gradient-blob blob1"></div>
+      <div class="gradient-blob blob2"></div>
+      <div class="gradient-blob blob3"></div>
+    </div>
+
+    <!-- Container principal -->
+    <div class="max-w-6xl mx-auto p-4 sm:p-8 lg:p-12">
+      <!-- Card de Vidro (Glassmorphism) -->
+      <main
+        id="curriculum-card"
+        class="holographic-card bg-slate-900/30 backdrop-blur-2xl border border-indigo-500/20 rounded-3xl shadow-2xl shadow-indigo-500/20 p-8 sm:p-12 transition-all duration-300"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <!-- Coluna Esquerda (Fixa em telas grandes) -->
+          <header class="lg:sticky lg:top-12 h-full flex flex-col z-10">
+            <div class="text-center lg:text-left">
+              <div
+                class="flex items-center justify-center lg:justify-start gap-4"
+              >
+                <img
+                  src="/assets/profile-picture.jpg"
+                  alt="Foto de Renato Filho"
+                  class="w-32 h-32 rounded-full border-2 border-white/30 shadow-lg"
+                />
+                <div
+                  id="view-counter-container"
+                  class="text-center bg-slate-800/50 p-2 rounded-lg border border-white/10 hidden"
+                >
+                  <div
+                    id="view-counter"
+                    class="text-2xl font-bold text-indigo-300"
+                  >
+                    ...
+                  </div>
+                  <div class="text-xs text-stone-400">Visualizações</div>
+                </div>
+              </div>
+              <h1
+                class="text-4xl sm:text-5xl font-bold text-white mt-6 drop-shadow-[0_2px_5px_rgba(0,0,0,0.5)]"
+              >
+                Renato Filho
+              </h1>
+              <h2
+                class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mt-1"
+              >
+                >* Desenvolvedor Fullstack
+              </h2>
+              <p id="main-summary" class="mt-6 text-stone-300 leading-relaxed">
+                Apaixonado por tecnologia, movido por propósito e forjado em
+                desafios reais, transformo ideias em soluções digitais que
+                conectam, inspiram e melhoram a vida das pessoas — começando
+                pelas que estão ao meu redor.
+              </p>
+            </div>
+
+            <!-- Contatos -->
+            <nav class="mt-10 space-y-4">
+              <a
+                href="https://www.linkedin.com/in/renato-filho-devandtech"
+                target="_blank"
+                class="flex items-center gap-3 group"
+              >
+                <img
+                  src="/assets/icons/icon-linkdin.svg"
+                  alt="LinkedIn"
+                  class="w-6 h-6 transition-transform group-hover:scale-110"
+                />
+                <span
+                  class="text-stone-300 group-hover:text-white font-medium transition-colors"
+                  >LinkedIn</span
+                >
+              </a>
+
+              <a
+                href="https://github.com/RenatofilhoDevandtech"
+                target="_blank"
+                class="flex items-center gap-3 group"
+              >
+                <img
+                  src="/assets/icons/icon-github.svg"
+                  alt="GitHub"
+                  class="w-6 h-6 transition-transform group-hover:scale-110"
+                />
+                <span
+                  class="text-stone-300 group-hover:text-white font-medium transition-colors"
+                  >GitHub</span
+                >
+              </a>
+
+              <a
+                href="mailto:renatoservicesti@gmail.com"
+                class="flex items-center gap-3 group"
+              >
+                <img
+                  src="/assets/icons/icon-email.svg"
+                  alt="Email"
+                  class="w-6 h-6 transition-transform group-hover:scale-110"
+                />
+                <span
+                  class="text-stone-300 group-hover:text-white font-medium transition-colors"
+                  >Email</span
+                >
+              </a>
+
+              <a
+                href="https://wa.me/5585985252317"
+                target="_blank"
+                class="flex items-center gap-3 group"
+              >
+                <img
+                  src="/assets/icons/icon-wathsapp.svg"
+                  alt="WhatsApp"
+                  class="w-6 h-6 transition-transform group-hover:scale-110"
+                />
+                <span
+                  class="text-stone-300 group-hover:text-white font-medium transition-colors"
+                  >WhatsApp</span
+                >
+              </a>
+            </nav>
+
+            <div
+              class="mt-10 pt-10 border-t border-white/10 space-y-4 text-center lg:text-left"
+            >
+              <button
+                id="why-hire-me-btn"
+                class="w-full text-center cursor-pointer inline-block bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-indigo-500/50 transition-all duration-300"
+              >
+                <i class="fa-solid fa-rocket mr-2"></i> Por que me contratar?
+              </button>
+              <label
+                for="modal-toggle"
+                class="w-full text-center cursor-pointer inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-blue-500/50 transition-all duration-300"
+              >
+                <i class="fa-solid fa-star mr-2"></i> Minha História
+              </label>
+            </div>
+          </header>
+
+          <!-- Coluna Direita (Conteúdo rolável) -->
+          <div class="lg:col-span-2 space-y-12 z-10">
+            <!-- Sobre Mim -->
+            <section id="about" class="px-6 py-10">
+              <h3
+                class="text-2xl font-bold text-white border-b border-indigo-400/30 pb-2 mb-6"
+              >
+                Sobre Mim
+              </h3>
+
+              <article
+                class="text-stone-300 space-y-6 text-base leading-relaxed"
+              >
+                <p>
+                  Oi, eu sou o Renato — nascido em Maracanaú (CE), filho de uma
+                  família grande e batalhadora. Comecei a trabalhar aos 16 anos
+                  como auxiliar de secretaria numa escola, enquanto ainda
+                  cursava o ensino médio. Não foi fácil: minha mãe cuidava de
+                  seis filhos, meu pai era o único provedor, e eu sabia que
+                  precisava ajudar. Então fui pra luta.
+                </p>
+
+                <p>
+                  Passei quase quatro anos como operador de caixa em
+                  supermercado, conciliando trabalho com os cuidados da minha
+                  mãe, que teve um AVC. Aprendi ali o valor da empatia, da
+                  escuta e da paciência — soft skills que carrego até hoje.
+                </p>
+
+                <p>
+                  Depois, vieram experiências em atendimento, produção
+                  industrial e, finalmente, uma virada de chave: aos 26 anos,
+                  conquistei uma bolsa integral pelo ProUni e me formei em Redes
+                  de Computadores.
+                </p>
+
+                <p>
+                  A faculdade foi um divisor de águas. Descobri que tecnologia
+                  não é só sobre máquinas — é sobre pessoas. Desde então, venho
+                  me especializando como Desenvolvedor Fullstack, com foco em
+                  Front-End, Cloud (AWS), automação com Python e Shell Script, e
+                  plataformas Low-Code.
+                </p>
+
+                <p>
+                  Fiz cursos no Vai na Web, Geração Tech, Mais1Code, entre
+                  outros. Aprendi a criar sites, versionar projetos com Git e
+                  GitHub, e estou montando meu repositório com certificados e
+                  projetos reais.
+                </p>
+
+                <p>
+                  Durante a pandemia, empreendi com uma MEI prestando serviços
+                  de TI via plataformas como EuNerd e FindUP — uma espécie de
+                  “Uber da tecnologia”. Também liderei uma equipe de vendas de
+                  cartelas de bingo solidário, que arrecadava fundos para
+                  doações e ajudava famílias em situação de vulnerabilidade. Foi
+                  uma experiência incrível que uniu propósito, tecnologia e
+                  impacto social.
+                </p>
+
+                <p>
+                  Hoje, aos 33 anos, sigo estudando, me reinventando e buscando
+                  oportunidades que tenham propósito. Sou resiliente,
+                  comunicativo, autodidata e colaborativo. Tenho paixão por unir
+                  tecnologia com significado — seja num projeto inovador, numa
+                  conversa transformadora ou em iniciativas que envolvam
+                  empreendedorismo e esporte, áreas onde acredito que impacto e
+                  inspiração caminham juntos
+                </p>
+
+                <p class="text-white font-semibold">
+                  Se você busca alguém que aprendeu com a vida, que transforma
+                  desafios em soluções e que está sempre em movimento, prazer:
+                  sou o Renato Filho.
+                </p>
+
+                <p class="text-indigo-400 font-bold text-lg">
+                  Vamos conversar e construir algo que faça sentido?
+                </p>
+              </article>
+            </section>
+
+            <!-- Seção Gemini API -->
+            <section id="gemini-feature">
+              <h3
+                class="text-2xl font-bold text-white border-b border-indigo-400/30 pb-2 mb-6 flex items-center gap-2"
+              >
+                <i
+                  class="fas fa-brain text-transparent bg-gradient-to-r from-indigo-500 to-blue-400 bg-clip-text"
+                ></i>
+                Análise de Compatibilidade com IA
+              </h3>
+              <div class="space-y-4">
+                <p class="text-stone-300">
+                  Cole a descrição de uma vaga abaixo e a IA fará uma análise
+                  honesta de compatibilidade com o meu perfil.
+                </p>
+                <textarea
+                  id="job-description"
+                  rows="6"
+                  class="w-full bg-slate-800/50 border border-indigo-400/30 rounded-lg p-3 text-stone-300 placeholder-stone-500 focus:ring-2 focus:ring-indigo-400 focus:outline-none transition-all"
+                  placeholder="Cole a descrição da vaga aqui..."
+                ></textarea>
+                <div class="flex items-center gap-4">
+                  <button
+                    id="analyze-job-btn"
+                    class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-5 rounded-lg shadow-lg hover:scale-105 hover:shadow-indigo-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-wait"
+                  >
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <span id="btn-text">Analisar Vaga</span>
+                  </button>
+                  <button
+                    id="clear-analysis-btn"
+                    class="inline-flex items-center justify-center gap-2 bg-slate-700/50 text-stone-300 font-bold py-2 px-5 rounded-lg hover:bg-slate-600/50 transition-all duration-300"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Limpar</span>
+                  </button>
+                </div>
+                <div
+                  id="gemini-result-container"
+                  class="hidden mt-4 p-4 bg-slate-800/50 border border-indigo-400/30 rounded-lg"
+                >
+                  <h4 class="font-bold text-indigo-300 mb-2">
+                    Resultado da Análise:
+                  </h4>
+                  <div
+                    id="gemini-result"
+                    class="text-stone-300 leading-relaxed whitespace-pre-wrap"
+                  ></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Projetos -->
+            <section id="projects">
+              <h3
+                class="text-2xl font-bold text-white border-b border-indigo-400/30 pb-2 mb-6"
+              >
+                Projetos
+              </h3>
+              <div id="projects-list" class="space-y-6">
+                <!-- Projetos do JSON serão inseridos aqui dinamicamente -->
+              </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section id="skills">
+              <h3
+                class="text-2xl font-bold text-white border-b border-indigo-400/30 pb-2 mb-4"
+              >
+                Habilidades
+              </h3>
+              <p class="text-sm text-stone-400 mb-6 -mt-2">
+                Clique em uma habilidade para ver exemplos de aplicação.
+              </p>
+              <div id="skills-list" class="flex flex-wrap gap-3">
+                <span class="interactive-item skill-tag"
+                  >HTML<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >CSS<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >JavaScript<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >React<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Node.js<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Firebase<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Python<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >AWS Cloud<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Git/GitHub<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Resiliência<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Trabalho em Equipe<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Comunicação<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Resolução de Problemas<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Inteligência artificial<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+                <span class="interactive-item skill-tag"
+                  >Inteligência emocional<i
+                    class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                  ></i
+                ></span>
+              </div>
+            </section>
+
+            <!-- Experiência Profissional -->
+            <section id="experience">
+              <h3
+                class="text-2xl font-bold text-white border-b border-indigo-400/30 pb-2 mb-4"
+              >
+                Experiência Profissional
+              </h3>
+              <p class="text-sm text-stone-400 mb-6 -mt-2">
+                Clique em uma experiência para saber mais.
+              </p>
+              <div id="experience-list" class="space-y-6 relative">
+                <!-- Linha do tempo -->
+                <div
+                  class="absolute left-0 top-0 bottom-0 w-0.5 bg-indigo-400/20"
+                ></div>
+
+                <div
+                  class="experience-item interactive-item"
+                  data-experience-title="Analista de Suporte N1"
+                >
+                  <h4 class="font-bold text-blue-300">
+                    Analista de Suporte N1<i
+                      class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                    ></i>
+                  </h4>
+                  <p class="text-sm text-stone-400">M.Dias Branco | 2024</p>
+                  <p class="text-sm text-stone-400 mt-1">
+                    Atuação na resolução de problemas técnicos e suporte a
+                    sistemas críticos.
+                  </p>
+                </div>
+                <div
+                  class="experience-item interactive-item"
+                  data-experience-title="Prestador de Serviços – Field Service"
+                >
+                  <h4 class="font-bold text-blue-300">
+                    Suporte Técnico de TI – Field Service<i
+                      class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                    ></i>
+                  </h4>
+                  <p class="text-sm text-stone-400">
+                    EuNerd / FindUP | 2022–2024
+                  </p>
+                  <p class="text-sm text-stone-400 mt-1">
+                    Responsável pelo atendimento a clientes de grande porte em
+                    campo.
+                  </p>
+                </div>
+                <div
+                  class="experience-item interactive-item"
+                  data-experience-title="transition-to-tech"
+                >
+                  <h4 class="font-bold text-blue-300">
+                    Outras Experiências<i
+                      class="fa-solid fa-sparkles text-xs interactive-icon text-indigo-400/50"
+                    ></i>
+                  </h4>
+                  <p class="text-sm text-stone-400">
+                    Produção, Atendimento ao cliente,Vendas,Varejo,
+                    Administração | 2010–2022
+                  </p>
+                  <p class="text-sm text-stone-400 mt-1">
+                    Desenvolvimento de soft skills essenciais como resiliência e
+                    foco.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Educação -->
+            <section id="education" class="px-6 py-10">
+               <!-- O contêiner flex agora engloba tudo, permitindo que a imagem fique ao lado do título e do texto -->
+              <div class="flex flex-col md:flex-row gap-8 items-start">
+                <!-- Coluna de Texto -->
+                <div class="flex-grow">
+                  <h3
+                    class="text-2xl font-bold text-white border-b border-indigo-400/30 pb-2 mb-6"
+                  >
+                    Educação e Cursos
+                  </h3>
+                  <div id="education-list" class="space-y-6 text-stone-300 mt-6">
+                    <!-- Graduação -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">Graduação Tecnólogo em Redes de Computadores</h4>
+                      <p class="text-sm text-stone-400">FATENE | 2018–2021</p>
+                      <p class="text-sm text-stone-400">
+                        incio da minha jornada na tecnologia, onde desenvolvi uma base sólida em redes, segurança da informação e administração de sistemas.
+                      </p>
+                    </div>
+                    <!-- Campinho Digital -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">
+                        Programa Restart-AWS Cloud Practitioner
+                      </h4>
+                      <p class="text-sm text-stone-400">
+                        Campinho Digital – AWS | 07/2025 em andamento
+                      </p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: Treinamento intensivo com foco em
+                        infraestrutura de TI, automação com Linux, Python e Shell
+                        Script, e uso prático de serviços AWS como EC2, S3, IAM,
+                        VPC, Lambda, RDS, CloudFormation e Route 53. Preparação para
+                        certificação AWS Certified Cloud Practitioner e
+                        desenvolvimento de habilidades profissionais como
+                        comunicação técnica e suporte em ambientes corporativos.
+                      </p>
+                    </div>
+
+                    <!-- FIEC / IEL -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">Programador Fullstack</h4>
+                      <p class="text-sm text-stone-400">
+                        Sistema FIEC / IEL – Escola Digital College | 04/2025 a
+                        06/2025
+                      </p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: HTML, CSS, JavaScript, React, Git, GitHub,
+                        Express, Node.js, Cypress, integração com APIs e banco de
+                        dados.
+                      </p>
+                    </div>
+
+                    <!-- Formação Fullstack -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">
+                        Desenvolvimento Fullstack
+                      </h4>
+                      <p class="text-sm text-stone-400">
+                        Vai na Web | 10/2024–04/2025
+                      </p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: HTML, CSS, JavaScript, React, Git, GitHub,
+                        Express, Node.js, Cypress, integração com APIs e banco de
+                        dados.
+                      </p>
+                    </div>
+
+                    <!-- TIC UECE -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">Ciência de Dados</h4>
+                      <p class="text-sm text-stone-400">
+                        Projeto TIC – UECE | 06/2024–06/2025
+                      </p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: Python, EDA, Estatística, Mineração de Dados,
+                        Modelagem, Deep Learning, NLP, Visão Computacional.
+                      </p>
+                    </div>
+
+                    <!-- Low-Code -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">
+                        Desenvolvimento Low-Code
+                      </h4>
+                      <p class="text-sm text-stone-400">
+                        PUC-Rio + Mais1Code | 07/2025
+                      </p>
+                    </div>
+
+                    <!-- Cloud Bootcamp -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">
+                        Intensivo MultiCloud, DevOps & IA
+                      </h4>
+                      <p class="text-sm text-stone-400">
+                        The Cloud Bootcamp | 01/2025 2h
+                      </p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: AWS, Azure, Google Cloud, DevOps, Inteligência
+                        Artificial, scripts para IA.
+                      </p>
+                    </div>
+
+                    <!-- Vai na Web Front-End -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">Programador Front-End</h4>
+                      <p class="text-sm text-stone-400">Vai na Web | 2024</p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: HTML, CSS, JavaScript, React, Git, GitHub.
+                      </p>
+                    </div>
+
+                    <!-- Cibersegurança -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">
+                        Fundamentos de Cibersegurança
+                      </h4>
+                      <p class="text-sm text-stone-400">Vai na Web | 2024</p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: Segurança da Informação, Hacker Ético (Blue &
+                        Red Team), vulnerabilidades, firewall, Linux, redes e
+                        estrutura de computadores.
+                      </p>
+                    </div>
+
+                    <!-- Manutenção -->
+                    <div>
+                      <h4 class="font-bold text-blue-300">
+                        Manutenção de Computadores
+                      </h4>
+                      <p class="text-sm text-stone-400">
+                        Instituto Idear | 2020 – 40 horas
+                      </p>
+                      <p class="text-sm text-stone-400">
+                        Habilidades: Hardware, software, eletrônica básica, reparo,
+                        manutenção e metarreciclagem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Coluna da Imagem -->
+                <div class="w-full md:w-1/3 flex-shrink-0 mt-8 md:mt-0">
+                  <img
+                    src="/assets/foto-educacao.svg"
+                    alt="Ilustração representando educação e tecnologia"
+                    class=" w-full h-auto object-contain"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="text-center text-sm text-stone-500 py-8">
+        Criado por Renato Filho © 2025. Todos os direitos reservados.
+      </footer>
+    </div>
+
+    <!-- Seção Secreta (Modal) -->
+    <input type="checkbox" id="modal-toggle" class="hidden peer" />
+    <div
+      class="secret-section hidden fixed inset-0 bg-black/50 backdrop-blur-md z-50 items-center justify-center p-4"
+    >
+      <div
+        class="bg-slate-900/60 backdrop-blur-2xl border border-indigo-500/30 rounded-2xl shadow-2xl shadow-indigo-500/20 max-w-2xl w-full max-h-[90vh] flex flex-col"
+      >
+        <header class="p-5 text-center border-b border-white/10">
+          <h4 class="text-2xl font-bold text-white">
+            Você desbloqueou um pedaço da minha história!
+          </h4>
+        </header>
+        <div class="p-8 overflow-y-auto text-stone-300 space-y-4">
+          <p>Algumas curiosidades sobre mim:</p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-lightbulb text-blue-400 text-xl w-6"></i>
+              <span
+                >Sou apaixonado por tecnologia, esportes, moda, arte e finanças
+                — gosto de aprender sobre tudo que me inspira.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i
+                class="fa-solid fa-hands-praying text-purple-400 text-xl w-6"
+              ></i>
+              <span
+                >Tenho fé em Deus e sou católico — gratidão é parte da minha
+                rotina e das minhas conquistas.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-child text-yellow-400 text-xl w-6"></i>
+              <span
+                >Comecei a trabalhar aos 16 anos para ajudar minha família. Isso
+                me ensinou sobre responsabilidade e empatia.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-heart text-pink-400 text-xl w-6"></i>
+              <span
+                >Cuidei da minha mãe após um AVC — aprendi sobre amor, paciência
+                e resiliência.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i
+                class="fa-solid fa-graduation-cap text-indigo-400 text-xl w-6"
+              ></i>
+              <span
+                >Sou aluno do Geração Tech 2.0 e estou me preparando para a
+                certificação AWS — sempre em busca de evolução.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-cloud text-cyan-400 text-xl w-6"></i>
+              <span
+                >Estudo no Campinho Digital, dentro do projeto AWS Restart — me
+                preparando para a certificação Cloud Practitioner.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-briefcase text-orange-400 text-xl w-6"></i>
+              <span
+                >Tenho uma MEI ativa e já prestei serviços de TI via plataformas
+                como EuNerd e FindUP — experiência prática e versátil.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-people-group text-red-400 text-xl w-6"></i>
+              <span
+                >Já liderei uma equipe de vendas em um projeto social de bingo
+                solidário — tecnologia com impacto real.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-folder-open text-teal-400 text-xl w-6"></i>
+              <span
+                >Estou construindo meu repositório com certificados e projetos
+                reais — organização e transparência são parte do meu
+                crescimento.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-medal text-lime-400 text-xl w-6"></i>
+              <span
+                >Meu sonho de infância era ser atleta profissional e participar
+                das Olimpíadas — o esporte me ensinou disciplina e
+                superação.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-dumbbell text-rose-400 text-xl w-6"></i>
+              <span
+                >Sou apaixonado por Educação Física e Fisioterapia — quero usar
+                esse conhecimento para ajudar na recuperação da minha mãe.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-seedling text-fuchsia-400 text-xl w-6"></i>
+              <span
+                >Quero criar um projeto social que leve educação e tecnologia
+                para jovens do meu bairro — onde a violência é alta e as
+                oportunidades são poucas.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i
+                class="fa-solid fa-house-chimney text-amber-400 text-xl w-6"
+              ></i>
+              <span
+                >Meu maior desejo é ver minha família prosperar com
+                estabilidade, saúde e dignidade — tudo o que faço tem esse
+                propósito.</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-music text-sky-400 text-xl w-6"></i>
+              <span
+                >Gosto de todos os estilos musicais — cada ritmo tem uma
+                história e uma energia que me inspira.</span
+              >
+            </li>
+          </ul>
+          <p class="text-center pt-4">Obrigado por visitar! 🙌</p>
+        </div>
+        <footer class="p-5 text-center border-t border-white/10">
+          <label
+            for="modal-toggle"
+            class="cursor-pointer inline-block bg-white/10 text-white font-bold py-2 px-6 rounded-lg hover:bg-white/20 transition-all"
+            >Fechar</label
+          >
+        </footer>
+      </div>
+    </div>
+
+    <!-- Modal para Análise da IA -->
+    <input type="checkbox" id="skill-modal-toggle" class="hidden peer" />
+    <div
+      id="skill-modal"
+      class="hidden fixed inset-0 bg-black/50 backdrop-blur-md z-50 items-center justify-center p-4"
+    >
+      <div
+        class="modal-content bg-slate-900/60 backdrop-blur-2xl border border-indigo-500/30 rounded-2xl shadow-2xl shadow-indigo-500/20 max-w-lg w-full flex flex-col"
+      >
+        <header
+          class="p-5 flex justify-between items-center border-b border-white/10"
+        >
+          <h4 id="skill-modal-title" class="text-2xl font-bold text-white">
+            Conversando com o Assistente de Carreira
+          </h4>
+          <label
+            for="skill-modal-toggle"
+            class="cursor-pointer text-2xl text-stone-400 hover:text-white"
+            >&times;</label
+          >
+        </header>
+        <div
+          id="skill-modal-body"
+          class="p-4 sm:p-6 flex-grow flex flex-col gap-4 overflow-y-auto"
+        >
+          <div id="chat-messages" class="flex flex-col gap-4 flex-grow">
+            <!-- Mensagens do chat serão inseridas aqui -->
+          </div>
+          <div
+            id="suggestion-chips"
+            class="flex flex-wrap gap-2 pt-4 border-t border-white/10"
+          >
+            <!-- Chips de sugestão serão inseridos aqui -->
+          </div>
+        </div>
+        <footer class="p-5 text-center border-t border-white/10">
+          <label
+            for="skill-modal-toggle"
+            class="cursor-pointer inline-block bg-white/10 text-white font-bold py-2 px-6 rounded-lg hover:bg-white/20 transition-all"
+            >Fechar</label
+          >
+        </footer>
+      </div>
+    </div>
+
+    <!-- Link para seu arquivo de JavaScript -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
