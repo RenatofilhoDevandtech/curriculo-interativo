@@ -1,0 +1,14 @@
+# Arquivos de dependências do Node
+node_modules
+
+# Arquivo de variáveis de ambiente - NUNCA ENVIE ISSO!
+.env
+semantic-commit.sh
+
+
+# Arquivos de log e cache
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
