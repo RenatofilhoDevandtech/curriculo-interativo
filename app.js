@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     technologies: ["HTML", "CSS", "TailwindCSS", "JavaScript", "Gemini API", "Firebase", "Node.js"],
     link: "#"
   },
-  
+  {
+      title: "Jornada AWS Practitioner",
+      description: "Documentação da minha imersão de mais de 400 horas no programa AWS re/Start, traduzindo conceitos complexos de nuvem em guias práticos e analogias do mundo real.",
+      technologies: ["AWS", "Python", "MkDocs", "Cloud", "Documentation"],
+      link: "https://github.com/RenatofilhoDevandtech/jornada-aws-practitioner"
+    },
   {
     title: "Site-Primefix",
     description: "PrimeFlix Moderno é uma aplicação de streaming premium, pensada para entregar uma experiência fluida, envolvente e visualmente marcante. Cada detalhe — da arquitetura ao design — foi cuidadosamente planejado.",
