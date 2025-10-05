@@ -1,6 +1,11 @@
 # 🚀 Currículo Interativo com Assistente de Carreira IA
 
 <div align="center">
+<img width="1080" height="1080" alt="imagem-curriculo" src="https://github.com/user-attachments/assets/301f5014-448f-4b15-9c70-39f1d4d1997f" />
+
+</div>
+
+<div align="center">
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status do Projeto">
   <img src="https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge" alt="Licença">
   <img src="https://img.shields.io/badge/Versão-1.0.0-informational?style=for-the-badge" alt="Versão">
@@ -17,10 +22,6 @@ Este não é apenas um currículo. É uma demonstração viva de como a tecnolog
 
 **Problema resolvido:** Recrutadores analisam dezenas de currículos por dia, buscando não apenas palavras-chave, mas o contexto por trás delas. Este projeto foi criado para economizar o tempo do recrutador, respondendo proativamente às suas perguntas e demonstrando minhas habilidades na prática.
 
-<div align="center">
-  <img width="1472" height="832" alt="curriculo interativo" src="https://github.com/user-attachments/assets/2bbe24fa-a876-4b44-9209-4c425473db76" />
-
-</div>
 
 ---
 
