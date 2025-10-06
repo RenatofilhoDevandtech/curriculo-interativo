@@ -1,80 +1,64 @@
-# 🚀 Currículo Interativo com Assistente de Carreira IA
+<p align="center">
+  <img src="https://api.iconify.design/ph/robot-duotone.svg?color=%238b5cf6" width="100" alt="AI Assistant Logo">
+</p>
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status do Projeto">
-  <img src="https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge" alt="Licença">
+<h1 align="center">Currículo Interativo com Assistente de Carreira IA</h1>
+
+<p align="center">
+  Uma experiência interativa que une design moderno e inteligência artificial para transformar o currículo tradicional em uma ferramenta de carreira estratégica e viva.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Concluído-4CAF50?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Status do Projeto">
+  <img src="https://img.shields.io/badge/Licença-MIT-blue?style=for-the-badge&logo=mit&logoColor=white" alt="Licença">
   <img src="https://img.shields.io/badge/Versão-1.0.0-informational?style=for-the-badge" alt="Versão">
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <br>
-  <strong><a href="https://seu-link-do-vercel.app">Ver Demo Ao Vivo »</a></strong>
-</div>
+  <a href="https://curriculo-interativo-renato.vercel.app/" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/Ver%20Demo%20Ao%20Vivo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Ver Demo Ao Vivo">
+  </a>
+</p>
 
 ---
 
-Este não é apenas um currículo. É uma demonstração viva de como a tecnologia pode transformar a forma como apresentamos nossas qualificações, criando uma ponte direta entre minhas habilidades e as necessidades do mercado.
+### <img src="https://api.iconify.design/feather/help-circle.svg?color=%238B5CF6" width="24" style="vertical-align:middle; margin-right:8px;" /> O Problema
+Recrutadores analisam dezenas de currículos por dia, buscando não apenas palavras-chave, mas o **contexto** por trás delas. Um PDF estático não responde a perguntas, não demonstra a profundidade do conhecimento e raramente se destaca. Como criar uma ponte real entre minhas qualificações e as necessidades do mercado?
 
-**Problema resolvido:** Recrutadores analisam dezenas de currículos por dia, buscando não apenas palavras-chave, mas o contexto por trás delas. Este projeto foi criado para economizar o tempo do recrutador, respondendo proativamente às suas perguntas e demonstrando minhas habilidades na prática.
+### <img src="https://api.iconify.design/feather/check-circle.svg?color=%233B82F6" width="24" style="vertical-align:middle; margin-right:8px;" /> A Solução
+Este projeto reimagina o currículo como um **produto digital**. Ele foi criado para economizar o tempo do recrutador, respondendo proativamente às suas perguntas e demonstrando minhas habilidades na prática, através de uma interface inteligente e conversacional.
 
 <div align="center">
-  <img width="1472" height="832" alt="curriculo interativo" src="https://github.com/user-attachments/assets/2bbe24fa-a876-4b44-9209-4c425473db76" />
-
+  <img width="960" alt="Screenshot do Currículo Interativo" src="https://github.com/user-attachments/assets/301f5014-448f-4b15-9c70-39f1d4d1997f">
 </div>
 
 ---
 
-## 📖 Tabela de Conteúdos
+### <img src="https://api.iconify.design/feather/gift.svg?color=%238B5CF6" width="24" style="vertical-align:middle; margin-right:8px;" /> Funcionalidades em Destaque
 
-- ✨ [Funcionalidades em Destaque](#-funcionalidades-em-destaque)
-- 🚀 [Por que este Projeto é Diferente?](#-por-que-este-projeto-é-diferente)
-- 🛠️ [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- 📂 [Estrutura do Projeto](#-estrutura-do-projeto)
-- ⚙️ [Como Rodar o Projeto Localmente](#-como-rodar-o-projeto-localmente)
-- 🌐 [Deploy na Vercel](#-deploy-na-vercel)
-- 💬 [Contato](#-contato)
-
----
-
-## ✨ Funcionalidades em Destaque
-
-| Funcionalidade              | Descrição                                                                 |
-|----------------------------|---------------------------------------------------------------------------|
-| 🔮 Design Holográfico       | Interface com efeito "liquid glass", fundo animado e brilho interativo.   |
-| 🧠 Assistente de Carreira IA| Chat com IA (Google Gemini) para análise profunda e contextual do perfil. |
-| 🤝 Análise de Compatibilidade | IA avalia a sinergia entre perfil e descrição de vaga.                    |
-| 💬 Experiência de Chat      | Respostas em streaming e sugestões de perguntas para engajar o recrutador.|
-| 📊 Contador de Visualizações| Firebase Firestore exibe engajamento em tempo real.                       |
+| Ícone | Funcionalidade | Descrição |
+| :---: | :--- | :--- |
+| <img src="https://api.iconify.design/feather/eye.svg?color=currentColor" width="20"/> | **Design Imersivo** | Interface com efeito "liquid glass", fundo animado e brilho interativo para uma experiência memorável. |
+| <img src="https://api.iconify.design/feather/message-circle.svg?color=currentColor" width="20"/> | **Assistente de IA** | Chat com Google Gemini para uma análise profunda e contextual do meu perfil. |
+| <img src="https://api.iconify.design/feather/git-pull-request.svg?color=currentColor" width="20"/> | **Análise de Sinergia** | IA avalia a compatibilidade entre meu perfil e a descrição de uma vaga colada pelo recrutador. |
+| <img src="https://api.iconify.design/feather/trending-up.svg?color=currentColor" width="20"/> | **Contador de Views** | Firebase Firestore exibe o engajamento com o perfil em tempo real. |
 
 ---
 
-## 🚀 Por que este Projeto é Diferente?
+### <img src="https://api.iconify.design/feather/tool.svg?color=%233B82F6" width="24" style="vertical-align:middle; margin-right:8px;" /> Tecnologias Utilizadas
 
-<div align="center">
-
-| Para Recrutadores              | Para Mim (Desenvolvedor)                   |
-|-------------------------------|-------------------------------------------|
-| ✅ Economia de Tempo           | 💻 Demonstração de Habilidades Fullstack   |
-| ✅ Contexto Instantâneo        | 🧠 Aplicação Prática de IA e APIs          |
-| ✅ Avaliação Profunda e Interativa | 🎨 Foco em UX/UI e Visão de Produto     |
-
-</div>
+| Camada | Stack de Tecnologias |
+| :--- | :--- |
+| **🎨 Frontend** | HTML5, CSS3, Tailwind CSS, JavaScript (ESM) |
+| **⚙️ Backend** | Node.js (Vercel Serverless Function) |
+| **🧠 IA Generativa** | Google Gemini API |
+| **🗃️ Banco de Dados** | Google Firebase Firestore (NoSQL) |
+| **🚀 Plataforma & DevOps**| Vercel (Hospedagem e Deploy Contínuo) |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-| Categoria             | Tecnologias                                      |
-|----------------------|--------------------------------------------------|
-| **Frontend**          | HTML5, CSS3, Tailwind CSS, JavaScript (ESM)     |
-| **Backend**           | Node.js (Serverless Function)                   |
-| **Inteligência Artificial** | Google Gemini API                        |
-| **Banco de Dados**    | Google Firebase Firestore (NoSQL)               |
-| **Hospedagem & Deploy**| Vercel                                         |
-
----
-
-## 📂 Estrutura do Projeto
+### <img src="https://api.iconify.design/feather/folder.svg?color=%238B5CF6" width="24" style="vertical-align:middle; margin-right:8px;" /> Estrutura do Projeto
 
 ```bash
  curriculo-interativo/
@@ -88,89 +72,66 @@ Este não é apenas um currículo. É uma demonstração viva de como a tecnolog
     └── style.css # Design da página
 ```
 
----
+### <img src="https://api.iconify.design/feather/play-circle.svg?color=%233B82F6" width="24" style="vertical-align:middle; margin-right:8px;" /> Como Rodar o Projeto Localmente
 
-## ⚙️ Como Rodar o Projeto Localmente
+#### 1. Pré-requisitos
+* **Node.js** instalado ([nodejs.org](https://nodejs.org/)).
+* **Vercel CLI** instalado: `npm i -g vercel`.
 
-### 🔧 Pré-requisitos
+#### 2. Configuração
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/RenatofilhoDevandtech/curriculo-interativo.git](https://github.com/RenatofilhoDevandtech/curriculo-interativo.git)
+    cd curriculo-interativo
+    ```
+2.  **Crie o Arquivo de Chaves Secretas (`.env`):**
+    ```bash
+    touch .env
+    ```
+    Adicione sua chave da API Gemini dentro do arquivo:
+    ```env
+    GEMINI_API_KEY="sua_chave_secreta_aqui"
+    ```
+3.  **Configure o Firebase:**
+    * Abra `script.js` e substitua o objeto `firebaseConfig` pelos dados do seu projeto Firebase, Faça isso para que suas visitas seja contbilizadas de forma correta pois se utilizar o meu, será contabilizado com base no meu projeto, por isso peço que atualize com os seus dados do firebase.
 
-- [Node.js](https://nodejs.org/)
-- Vercel CLI: instale com o comando:
-
-```bash
-npm i -g vercel
-```
-## 🚀 Passos
-
-### 1. Clone o Repositório
-
-```bash
-git clone https://github.com/RenatofilhoDevandtech/curriculo-interativo.git
-cd curriculo-interativo
-```
-markdown
-## 🚀 Passos para Executar o Projeto
-
-### 2. Crie o Arquivo de Variáveis de Ambiente
-
-```bash
-touch .env
-```
-Adicione sua chave da API Gemini no arquivo .env:
-
-```bash
-env
-GEMINI_API_KEY="sua_chave_secreta_aqui"
-```
-## 3. Configure o Firebase no script.js
-```js
-const firebaseConfig = {
+  ```bash
+  const firebaseConfig = {
   apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMÍNIO",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_BUCKET",
-  messagingSenderId: "SEU_SENDER_ID",
-  appId: "SEU_APP_ID"
+  authDomain: "curriculo-interativo.firebaseapp.com",
+  projectId: "curriculo-interativo",
+  storageBucket: "curriculo-interativo.appspot.com",
+  messagingSenderId: "333721113393",
+  appId: "1:333721113393:web:bc7a7eb64ea5728fa25610",
+  measurementId: "G-XXXXXXX"
 };
 ```
-## 4. Instale as Dependências e Rode o Servidor
-```bash
-npm install
-vercel dev
-```
-## 5. Abra no Navegador
+4.  **Instale e Rode:**
+    ```bash
+    npm install
+    vercel dev
+    ```
+    O projeto estará disponível em `http://localhost:3000`.
 
-```bash
-Código
-http://localhost:3000
-```
-## 🌐 Deploy na Vercel
+---
 
-1. Crie um repositório no GitHub e envie os arquivos.
-2. Acesse [vercel.com](https://vercel.com), clique em **Add New > Project**.
-3. Importe o repositório.
-4. Configure as variáveis de ambiente:
+### <img src="https://api.iconify.design/feather/shield.svg?color=%238B5CF6" width="24" style="vertical-align:middle; margin-right:8px;" /> Nota sobre Segurança
 
-```txt
-Name: GEMINI_API_KEY  
-Value: sua_chave_secreta_aqui
-```
-## 💬 Contato
+Este projeto foi projetado com a segurança em mente.
+* **Chave da IA:** A `GEMINI_API_KEY` é protegida em uma variável de ambiente e **nunca** é exposta no frontend. As chamadas são feitas através de uma função serverless que atua como um proxy seguro.
+* **Chaves do Firebase:** As chaves de configuração do Firebase no frontend são públicas por design. A segurança é garantida pelas **Regras de Segurança (Security Rules)** do Firestore, que foram configuradas para permitir escrita apenas por usuários autenticados, prevenindo abuso.
 
-<div align="center">
+---
 
-Desenvolvido com ❤️ por **Renato Filho**. Vamos nos conectar!
+### <img src="https://api.iconify.design/feather/send.svg?color=%233B82F6" width="24" style="vertical-align:middle; margin-right:8px;" /> Contato
 
-<br><br>
-
-<a href="https://www.linkedin.com/in/renato-filho-devandtech/">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-
-<a href="https://github.com/RenatofilhoDevandtech">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-
-</div>
-
-
+<p align="center">
+  Desenvolvido por <strong>Renato Filho</strong>. Vamos nos conectar!
+  <br><br>
+  <a href="https://www.linkedin.com/in/renato-filho-devandtech/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/RenatofilhoDevandtech">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
